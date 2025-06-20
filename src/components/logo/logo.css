@@ -1,7 +1,10 @@
 .logo{
-    background-color: #161a1d;
+    background-color: var(--nav-color);
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid;
+    border-color: #ffffff47;
+    padding: 10px;
 }
 
 .img{

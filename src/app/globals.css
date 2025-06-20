@@ -1,6 +1,20 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --header-color: #FFF;
+  --header-text-color: #000;
+  --nav-color: #1F2937;
+  --nav-text-color: #CACACA;
+  --background-color: #F3F4F6;
+  --card-color: #eeeeee;
+  --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 
+            0 6px 6px rgba(0, 0, 0, 0.1);
+  --button-color: #137BEB;
+  --button-color-hover: #0D539E;
+  --primary-text-color: #2D2D2D;
+  --secondary-text-color: #6E6E6E;
+  --primary-color: #D6D6D6;
+  --text-color: #1F2937;
 }
 
 @media (prefers-color-scheme: dark) {

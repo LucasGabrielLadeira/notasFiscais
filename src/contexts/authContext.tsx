@@ -83,7 +83,7 @@ export function AuthProvider({ children }: any) {
         // Como os cookies são definidos pelo servidor via HTTP Only,
         // não precisamos mais do setAuthCookies
         await fetchUserData();
-        router.push("/home");
+        router.push("/");
       } else {
         throw new Error(data.erro || "Credenciais inválidas");
       }

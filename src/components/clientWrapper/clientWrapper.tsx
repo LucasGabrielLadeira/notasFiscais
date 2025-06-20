@@ -11,8 +11,8 @@ export default function ClientWrapper({ children }: { children: React.ReactNode 
 
   return (
     <div className="app">
-      <div className="top-grid">
-        <Logo />
+      <div className={`top-grid ${menuToggled ? "menu-toggled" : ""}`}>
+        <Logo menuToggled={menuToggled}/>
         <Header setMenuToggled={setMenuToggled} />
       </div>
       <div className={`main-grid ${menuToggled ? "menu-toggled" : ""}`}>

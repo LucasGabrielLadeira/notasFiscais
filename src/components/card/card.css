@@ -1,0 +1,6 @@
+.cardComponent{
+    background-color: #FFF;
+    box-shadow: var(--card-shadow);
+    padding: 40px;
+    border-radius: 5px;
+}

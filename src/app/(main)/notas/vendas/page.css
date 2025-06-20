@@ -1,0 +1,121 @@
+.container-vendas{
+    width: 100%;
+}
+
+.header-vendas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title-vendas{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.buttons-container-vendas{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 7px;
+}
+
+.buttons-container-vendas button{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border:none
+}
+.buttons-container-vendas button:first-child{
+    background-color: var(--button-color);
+}
+
+.buttons-container-vendas button:first-child:hover{
+    background-color: var(--button-color-hover);
+}
+
+.buttons-container-vendas button{
+    background-color: #6B6B6B;
+}
+
+.buttons-container-vendas button:hover{
+    background-color: #585858;
+}
+
+.buttons-container-vendas button svg{
+    align-self: center;
+}
+
+
+.tabela{
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela thead{
+    background-color: #F9FAFB;
+}
+
+.tabela thead th{
+    font-size: 14px;
+    padding: 12px 0 12px 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.tabela tbody tr + tr {
+    border-top: 1px solid #E5E7EB;
+}
+
+.tabela tbody tr td{
+    font-size: 14px;
+    padding: 20px 0 20px 20px;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.footer-tabela{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.displaying{
+    align-content: center;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    gap:1rem
+}
+
+.pagination button{
+    padding: 10px 10px;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    color: #999;
+    border-radius: 5px;
+}
+.pagination button.selected{
+    background-color: var(--button-color);
+    color: #FFF;
+}
+
+.pagination button:hover:not(.selected) {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.01);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}

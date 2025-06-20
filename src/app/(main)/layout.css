@@ -1,8 +1,8 @@
 :root {
   --bg-dark: #1A2F3A;
   --logo-height: 100px;
-  --header-height: 70px;
-  --menu-top-height: 70px;
+  --header-height: 80px;
+  --menu-top-height: 80px;
   --aside-width: 240px;
   --aside-toggled-width: 80px;
   --logo-width: 240px;
@@ -29,6 +29,7 @@
   grid-template-columns: var(--logo-width) 1fr;
   grid-template-rows: var(--header-height);
   grid-template-areas: "logo header";
+  transition: grid-template-columns 0.3s ease;
 }
 
 .main-grid{
@@ -41,11 +42,7 @@
 }
 
 .menu-toggled{
-  display: grid;
   grid-template-columns: var(--aside-toggled-width) 1fr;
-  grid-template-areas: 
-    "menu content";
-  height: calc(100vh - var(--header-height));
 }
 
 aside.logo{
