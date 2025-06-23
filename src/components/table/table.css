@@ -1,0 +1,73 @@
+.tabela{
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela thead{
+    background-color: #F9FAFB;
+}
+
+.tabela thead th{
+    font-size: 14px;
+    padding: 12px 0 12px 20px;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.tabela tbody tr + tr {
+    border-top: 1px solid #E5E7EB;
+}
+
+.tabela tbody tr td{
+    font-size: 14px;
+    padding: 20px 0 20px 20px;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.footer-tabela{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.displaying{
+    align-content: center;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    gap:1rem
+}
+
+.pagination button{
+    padding: 10px 10px;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    color: #999;
+    border-radius: 5px;
+}
+.pagination button.selected{
+    background-color: var(--button-color);
+    color: #FFF;
+}
+
+.pagination button:hover:not(.selected) {
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.01);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.display-select{
+    background-color: transparent;
+    border: solid 1px #999;
+    color: #000;
+    border-radius: 5px;
+}
