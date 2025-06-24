@@ -5,6 +5,7 @@ import Header from "../header/header";
 import Logo from "../logo/logo";
 import Nav from "../nav/nav";
 import Content from "../content/content";
+import './clientWrapper.css'
 
 export default function ClientWrapper({ children }: { children: React.ReactNode }) {
   const [menuToggled, setMenuToggled] = useState(false);

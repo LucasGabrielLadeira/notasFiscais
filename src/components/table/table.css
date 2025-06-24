@@ -53,12 +53,17 @@
     color: #999;
     border-radius: 5px;
 }
+
+.pagination button.disabled{
+    color: rgba(201, 201, 201, 0.438)
+}
+
 .pagination button.selected{
     background-color: var(--button-color);
     color: #FFF;
 }
 
-.pagination button:hover:not(.selected) {
+.pagination button:hover:not(.selected, .disabled) {
     color: #000;
     background-color: rgba(0, 0, 0, 0.01);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
